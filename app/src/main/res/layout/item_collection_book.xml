@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="120dp"
+    android:layout_marginTop="8dp"
+    android:layout_margin="4dp"
+    android:paddingTop="4dp"
+    android:background="@drawable/style_radius_3"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_marginVertical="8dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingRight="16dp"
+
+        android:layout_gravity="center_vertical"
+        android:paddingLeft="16dp">
+
+        <TextView
+            android:id="@+id/tv_item_book_collection_code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mã danh mục: MS01"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_item_book_collection_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxWidth="280dp"
+            android:text="Tên danh mục: Sách giáo khoaên danh mục: Sách giáo khoaên danh mục: Sách giáo khoaên danh mục: Sách giáo khoaên danh mục: Sách giáo khoa"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+<!--        <TextView-->
+<!--            android:id="@+id/tv_item_book_collection_description"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Mô tả: do NXV giáo dục \nViệt Nam phát hành"-->
+<!--            android:textColor="@color/white"-->
+<!--            android:textSize="22sp"-->
+<!--            android:textStyle="bold" />-->
+
+    </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"/>
+    <LinearLayout
+        android:layout_marginHorizontal="8dp"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:paddingVertical="16dp"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+        <ImageView
+            android:id="@+id/img_item_book_collection_delete"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@android:drawable/ic_delete"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="20dp"/>
+        <ImageView
+            android:id="@+id/img_item_book_collection_edit"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/ic_pencil" />
+    </LinearLayout>
+</LinearLayout>

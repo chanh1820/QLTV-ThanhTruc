@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ADE4DB"
+    android:orientation="vertical"
+    android:padding="8dp"
+    tools:context=".view.admin.danhsachphieumuon.ListTransactionActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:background="@drawable/style_radius_1"
+            android:paddingHorizontal="16dp"
+            android:textColor="@color/white"
+            android:id="@+id/btn_back_list_transaction"
+            android:textSize="16sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Quay lại" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <Button
+            android:background="@drawable/style_radius_3"
+            android:paddingHorizontal="16dp"
+            android:textSize="16sp"
+            android:textColor="@color/white"
+
+            android:drawableLeft="@drawable/ic_baseline_add_circle_24"
+            android:id="@+id/btn_search_transaction_export_excel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Xuất file" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Từ ngày:"
+                android:textAlignment="center"
+                android:textColor="@color/purple_500"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <EditText
+                    android:id="@+id/edt_search_transaction_min_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:layout_marginTop="4dp"
+                    android:drawablePadding="12dp"
+                    android:inputType="textPersonName"
+                    android:paddingLeft="12dp"
+                    android:paddingRight="12dp" />
+
+                <ImageView
+                    android:id="@+id/imv_search_transaction_calendar_min_date"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginBottom="4dp"
+                    app:srcCompat="@drawable/ic_lich" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Đến ngày:"
+                android:textAlignment="center"
+                android:textColor="@color/purple_500"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/edt_search_transaction_max_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:layout_weight="4"
+                    android:drawablePadding="12dp"
+                    android:inputType="textPersonName"
+                    android:paddingLeft="12dp"
+                    android:paddingRight="12dp" />
+
+                <ImageView
+                    android:id="@+id/imv_search_transaction_calendar_max_date"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginBottom="4dp"
+                    app:srcCompat="@drawable/ic_lich" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Lớp:"
+                android:textAlignment="center"
+                android:textColor="@color/purple_500"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+            <Spinner
+                android:id="@+id/spn_search_transaction_class_room"
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                android:background="@drawable/style_spinner"
+                android:dropDownVerticalOffset="40dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tên:"
+                android:textAlignment="center"
+                android:textColor="@color/purple_500"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+            <EditText
+                android:id="@+id/edt_search_transaction_name"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:paddingLeft="8dp"
+                android:background="@drawable/custom_edt_text_1"
+                android:dropDownVerticalOffset="40dp" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Trạng thái:"
+                android:textAlignment="center"
+                android:textColor="@color/purple_500"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <Spinner
+                android:id="@+id/spn_search_transaction_status"
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                android:background="@drawable/style_spinner"
+                android:dropDownVerticalOffset="40dp" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_search_transaction"
+            android:layout_width="120dp"
+            android:layout_height="60dp"
+            android:layout_gravity="bottom"
+            android:backgroundTint="@android:color/holo_orange_light"
+            android:drawableLeft="@drawable/tim_kiem"
+            android:text="Tìm"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#F44336"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:gravity="center_horizontal"
+        android:text="Danh sách phiếu mượn"/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_list_transaction"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</LinearLayout>

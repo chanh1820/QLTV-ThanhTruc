@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="8dp"
+    tools:context=".view.admin.listsach.ListBookActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:background="@drawable/style_radius_1"
+            android:paddingHorizontal="16dp"
+            android:textColor="@color/white"
+            android:id="@+id/btn_book_order_back"
+            android:textSize="16sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Quay lại" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+<!--        <Button-->
+<!--            android:id="@+id/btn_admin_on"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:background="@drawable/style_radius_3"-->
+<!--            android:drawableLeft="@drawable/ic_baseline_admin_panel_settings_24"-->
+<!--            android:paddingHorizontal="16dp"-->
+<!--            android:text="Admin"-->
+<!--            android:textColor="@color/white"-->
+<!--            android:textSize="16sp" />-->
+        <TextView
+            android:text="100"
+            android:textStyle="bold"
+            android:textColor="#4CAF50"
+            android:textSize="20sp"
+            android:id="@+id/tv_book_order_quantity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:background="@drawable/ic_book_cart"
+                android:textColor="@color/white"
+                android:id="@+id/imv_book_order_cart"
+                android:layout_width="64dp"
+                android:layout_height="64dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_quantity_gio_hang"
+                android:text="Giỏ hàng (1)"
+                android:textColor="@color/black"
+                android:textSize="20sp"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Lớp:"
+                android:textAlignment="center"
+                android:textColor="@color/purple_500"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+            <Spinner
+                android:id="@+id/spn_book_order_choose_class_room"
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                android:background="@drawable/style_spinner"
+                android:dropDownVerticalOffset="40dp" />
+        </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Danh mục:"
+                android:textAlignment="center"
+                android:textColor="@color/purple_500"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+            <Spinner
+                android:id="@+id/spn_book_order_choose_collection"
+                android:layout_width="180dp"
+                android:layout_height="40dp"
+                android:background="@drawable/style_spinner"
+                android:dropDownVerticalOffset="40dp" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:gravity="center_vertical"
+        android:layout_marginTop="16dp"
+
+        android:layout_height="wrap_content">
+        <EditText
+            android:background="@drawable/style_edt_1"
+            android:layout_width="wrap_content"
+            android:padding="8dp"
+            android:id="@+id/edt_list_order_picked_input_search"
+            android:textSize="18sp"
+            android:layout_weight="10"
+            android:hint="Nhập để tìm kiếm..."
+            android:layout_height="48dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="2dp"
+            />
+        <Button
+            android:padding="8dp"
+            android:drawableLeft="@drawable/ic_search_1"
+            android:text="Tìm"
+            android:id="@+id/btn_list_book_order_search"
+            android:background="@drawable/style_edt_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:id="@+id/pb_list_book_reading_loading"
+        android:layout_height="wrap_content"/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_list_book_order"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

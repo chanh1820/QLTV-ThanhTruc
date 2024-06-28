@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_marginTop="18dp"
+        android:layout_marginHorizontal="24dp"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical"
+            android:layout_height="wrap_content">
+        <TextView
+            android:text="Mã sách: "
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="14sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+            <EditText
+                android:id="@+id/edt_save_book_code"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_library"
+                android:drawablePadding="12dp" />
+
+
+        </LinearLayout>
+        <ImageView
+            android:id="@+id/imv_save_book_add_image"
+            android:src="@drawable/baseline_add_photo_alternate_24"
+            android:layout_width="70dp"
+            android:layout_height="100dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_marginTop="18dp"
+        android:layout_marginHorizontal="24dp"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="Tên sách: "
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="14sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <EditText
+            android:id="@+id/edt_save_book_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_library"
+            android:drawablePadding="12dp"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_marginTop="18dp"
+        android:layout_marginHorizontal="24dp"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="Danh mục: "
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="14sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <Spinner
+            android:id="@+id/spn_save_book_collection_name"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/style_spinner2"
+            android:gravity="center"
+            android:textAlignment="center"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="18dp"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_weight="4"
+            android:layout_marginHorizontal="24dp"
+            android:layout_height="wrap_content">
+            <TextView
+                android:text="Vị trí: "
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="14sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <EditText
+                android:id="@+id/edt_save_book_locate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_baseline_add_location_alt_24"
+                android:drawablePadding="12dp"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_marginHorizontal="24dp"
+            android:layout_height="wrap_content">
+            <TextView
+                android:text="Số lượng: "
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="14sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <EditText
+                android:id="@+id/edt_save_book_quantity"
+                android:layout_width="match_parent"
+                android:inputType="number"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_baseline_numbers_24"
+                android:drawablePadding="12dp"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

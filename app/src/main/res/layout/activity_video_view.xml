@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".view.user.video.VideoViewActivity">
+        <WebView
+            android:layout_width="match_parent"
+            android:id="@+id/wv_video"
+            android:layout_height="300dp"/>
+
+<!--    <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView-->
+<!--        android:id="@+id/youtube_player_view"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:id="@+id/wv_web"-->
+<!--        android:layout_weight="2"-->
+<!--        android:layout_height="wrap_content"/>-->
+</LinearLayout>
